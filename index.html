@@ -12,10 +12,13 @@
         <fieldset class="field1">
             <legend class="titleID">Votre identité</legend>
             <ol>
-                <label for="mon_nom"></label><li>Nom :</li></label>
-                <input type="text" name="mon_nom" />
+                <label for="mon_nom"></label>
+                <li>Nom :</li></label>
+                <input type="text" id="nom" name="mon_nom" required minlength="1" placeholder="Nom" />
                 <li>Prénom :</li>
+                <input type="text" id="prénom" name="mon_prénom" required minlength="1" placeholder="Prénom" />
                 <li>Adresse mail :</li>
+                <input type="text" id="mail" name="mon_mail" required minlength="1" placeholder="Adresse mail" />
             </ol>
         </fieldset>
 
@@ -25,7 +28,9 @@
                 <li>Adresse :</li>
                 <textarea row="5" cols="10"></textarea>
                 <li>Code postal :</li>
+                <input type="text" id="postal" name="code_postal" required minlength="1" placeholder="Code postal" />
                 <li>Ville :</li>
+                <input type="text" id="ville" name="ma_ville" required minlength="1" placeholder="Ville" />
             </ol>
         </fieldset>
 
@@ -33,21 +38,26 @@
             <legend class="titleCB">Information de réglement</legend>
             <ol>
                 <li>Type de carte bancaire :</li>
-                <div></div>
-                <input type="radio" id="VISA" name="boutoncarte" value="visa" checked>
-                <label for="VISA">VISA</label>
-            </div>
-            <div>
-                <input type="radio" id="Mastercard" name="boutoncarte" value="mastercard">
-                <label for="Mastercard">Mastercard</label>
-            </div>
+                <div>
+                    <input type="radio" id="VISA" name="boutoncarte" value="visa" checked>
+                    <label for="VISA">VISA</label>
+                </div>
+                <div>
+                    <input type="radio" id="Mastercard" name="boutoncarte" value="mastercard">
+                    <label for="Mastercard">Mastercard</label>
+                </div>
                 <li>Numéro de carte :</li>
+                <input type="text" id="numcard" name="numero_carte" required minlength="1" placeholder="Numéro de carte" />
                 <li>Code de sécurité :</li>
+                <input type="text" id="secID" name="securite_carte" required minlength="1" placeholder="Code de sécurité" />
                 <li>Nom du titulaire :</li>
+                <input type="text" id="titunom" name="titu_name" required minlength="1" placeholder="Nom du titulaire" />
             </ol>
         </fieldset>
-        
+
+
     </form>
+    <input type="button" value="J'achète!" />
 </body>
 
 </html>
