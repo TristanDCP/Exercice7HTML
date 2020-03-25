@@ -14,7 +14,7 @@
             <ol>
                 <li>Nom : <input type="text" id="surname" name="my_surname" required minlength="1" placeholder="Nom" /></li>
                 <li>Prénom : <input type="text" id="name" name="my_name" required minlength="1" placeholder="Prénom" /></li>
-                <li>Adresse mail : <input type="text" id="mail" name="my_mail" required minlength="1" placeholder="Adresse mail" /></li>
+                <li>Adresse mail : <input type="email" id="mail" name="my_mail" required minlength="1" placeholder="Adresse mail" /></li>
             </ol>
 
         </fieldset>
@@ -22,7 +22,7 @@
             <legend class="titleAdress">Adresse de livraison</legend>
             <ol>
                 <li>Adresse : <textarea rows="5" cols="20"></textarea></li>
-                <li>Code postal : <input type="text" id="zip" name="zip_code" required minlength="1" placeholder="Code postal" /></li>
+                <li>Code postal : <input type="text" id="zip" name="zip_code" required minlength="5" maxlength="5" placeholder="Code postal" /></li>
                 <li>Ville : <input type="text" id="town" name="my_town" required minlength="1" placeholder="Ville" /></li>
             </ol>
             
@@ -36,9 +36,9 @@
                     <label for="VISA">VISA</label><br> 
                     <input type="radio" id="Mastercard" name="cardcheck" value="mastercard">
                     <label for="Mastercard">Mastercard</label></li>
-                <li>Numéro de carte : <input type="text" id="cardnum" name="card_number" required minlength="1" maxlength="12" placeholder="Numéro de carte" /></li>
-                <li>Code de sécurité : <input type="text" id="securitycode" name="security_code" required minlength="1" maxlength="3" placeholder="Code de sécurité" /></li>
-                <li>name du titulaire : <input type="text" id="ownername" name="owner_name" required minlength="1" placeholder="Nom du titulaire" /></li>
+                <li>Numéro de carte : <input type="text" id="cardnum" name="card_number" required minlength="12" maxlength="12" placeholder="Numéro de carte" /></li>
+                <li>Code de sécurité : <input type="number" id="securitycode" name="security_code" min="000" max="999" placeholder="Code de sécurité" /></li>
+                <li>Nom du titulaire : <input type="text" id="ownername" name="owner_name" required minlength="1" placeholder="Nom du titulaire" /></li>
             </ol>
         </fieldset>
 
