@@ -11,14 +11,40 @@
     <form>
         <fieldset class="field1">
             <legend class="titleID">Votre identité</legend>
+            <ol>
+                <label for="mon_nom"></label><li>Nom :</li></label>
+                <input type="text" name="mon_nom" />
+                <li>Prénom :</li>
+                <li>Adresse mail :</li>
+            </ol>
         </fieldset>
-        
+
         <fieldset class="field2">
             <legend class="titleAdress">Adresse de livraison</legend>
+            <ol>
+                <li>Adresse :</li>
+                <textarea row="5" cols="10"></textarea>
+                <li>Code postal :</li>
+                <li>Ville :</li>
+            </ol>
         </fieldset>
 
         <fieldset class="field3">
             <legend class="titleCB">Information de réglement</legend>
+            <ol>
+                <li>Type de carte bancaire :</li>
+                <div></div>
+                <input type="radio" id="VISA" name="boutoncarte" value="visa" checked>
+                <label for="VISA">VISA</label>
+            </div>
+            <div>
+                <input type="radio" id="Mastercard" name="boutoncarte" value="mastercard">
+                <label for="Mastercard">Mastercard</label>
+            </div>
+                <li>Numéro de carte :</li>
+                <li>Code de sécurité :</li>
+                <li>Nom du titulaire :</li>
+            </ol>
         </fieldset>
         
     </form>
