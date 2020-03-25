@@ -12,9 +12,9 @@
         <fieldset class="field1">
             <legend class="titleID">Votre identité</legend>
             <ol>
-                <li>Nom : <input type="text" id="nom" name="mon_nom" required minlength="1" placeholder="Nom" /></li>
-                <li>Prénom : <input type="text" id="prénom" name="mon_prénom" required minlength="1" placeholder="Prénom" /></li>
-                <li>Adresse mail : <input type="text" id="mail" name="mon_mail" required minlength="1" placeholder="Adresse mail" /></li>
+                <li>Nom : <input type="text" id="surname" name="my_surname" required minlength="1" placeholder="Nom" /></li>
+                <li>Prénom : <input type="text" id="name" name="my_name" required minlength="1" placeholder="Prénom" /></li>
+                <li>Adresse mail : <input type="text" id="mail" name="my_mail" required minlength="1" placeholder="Adresse mail" /></li>
             </ol>
 
         </fieldset>
@@ -22,23 +22,23 @@
             <legend class="titleAdress">Adresse de livraison</legend>
             <ol>
                 <li>Adresse : <textarea rows="5" cols="20"></textarea></li>
-                <li>Code postal : <input type="text" id="postal" name="code_postal" required minlength="1" placeholder="Code postal" /></li>
-                <li>Ville : <input type="text" id="ville" name="ma_ville" required minlength="1" placeholder="Ville" /></li>
+                <li>Code postal : <input type="text" id="zip" name="zip_code" required minlength="1" placeholder="Code postal" /></li>
+                <li>Ville : <input type="text" id="town" name="my_town" required minlength="1" placeholder="Ville" /></li>
             </ol>
             
         </fieldset>
          <fieldset class="field3">
-            <legend class="titleCB">Information de réglement</legend>
+            <legend class="titleCard">Information de réglement</legend>
             <ol>
                 
                 <li>Type de carte bancaire :<br>
-                    <input type="radio" id="VISA" name="boutoncarte" value="visa">
+                    <input type="radio" id="VISA" name="cardcheck" value="visa">
                     <label for="VISA">VISA</label><br> 
-                    <input type="radio" id="Mastercard" name="boutoncarte" value="mastercard">
+                    <input type="radio" id="Mastercard" name="cardcheck" value="mastercard">
                     <label for="Mastercard">Mastercard</label></li>
-                <li>Numéro de carte : <input type="text" id="numcard" name="numero_carte" required minlength="1" maxlength="12" placeholder="Numéro de carte" /></li>
-                <li>Code de sécurité : <input type="text" id="secID" name="securite_carte" required minlength="1" maxlength="3" placeholder="Code de sécurité" /></li>
-                <li>Nom du titulaire : <input type="text" id="titunom" name="titu_name" required minlength="1" placeholder="Nom du titulaire" /></li>
+                <li>Numéro de carte : <input type="text" id="cardnum" name="card_number" required minlength="1" maxlength="12" placeholder="Numéro de carte" /></li>
+                <li>Code de sécurité : <input type="text" id="securitycode" name="security_code" required minlength="1" maxlength="3" placeholder="Code de sécurité" /></li>
+                <li>name du titulaire : <input type="text" id="ownername" name="owner_name" required minlength="1" placeholder="Nom du titulaire" /></li>
             </ol>
         </fieldset>
 
