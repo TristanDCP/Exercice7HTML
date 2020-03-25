@@ -1,11 +1,11 @@
-.background-color1 {
+.field1, ..titleID {
     background-color: #2574a9;
 }
 
-.background-color2 {
+.field2, .titleAdresse {
     background-color: #9a12b3;
 }
 
-.background-color3 {
+.field3, .titleCB {
     background-color: #db0a5b;
 }
