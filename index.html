@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
         <fieldset class="field2">
             <legend class="titleAdress">Adresse de livraison</legend>
             <ol>
-                <li>Adresse : <textarea row="5" cols="10"></textarea></li>
+                <li>Adresse : <textarea rows="5" cols="20"></textarea></li>
                 <li>Code postal : <input type="text" id="postal" name="code_postal" required minlength="1" placeholder="Code postal" /></li>
                 <li>Ville : <input type="text" id="ville" name="ma_ville" required minlength="1" placeholder="Ville" /></li>
             </ol>
@@ -30,15 +30,12 @@
          <fieldset class="field3">
             <legend class="titleCB">Information de réglement</legend>
             <ol>
-                <li>Type de carte bancaire :</li>
-                <div>
+                
+                <li>Type de carte bancaire :<br>
                     <input type="radio" id="VISA" name="boutoncarte" value="visa">
-                    <label for="VISA">VISA</label>
-                </div>
-                <div>
+                    <label for="VISA">VISA</label><br> 
                     <input type="radio" id="Mastercard" name="boutoncarte" value="mastercard">
-                    <label for="Mastercard">Mastercard</label>
-                </div>
+                    <label for="Mastercard">Mastercard</label></li>
                 <li>Numéro de carte : <input type="text" id="numcard" name="numero_carte" required minlength="1" maxlength="12" placeholder="Numéro de carte" /></li>
                 <li>Code de sécurité : <input type="text" id="secID" name="securite_carte" required minlength="1" maxlength="3" placeholder="Code de sécurité" /></li>
                 <li>Nom du titulaire : <input type="text" id="titunom" name="titu_name" required minlength="1" placeholder="Nom du titulaire" /></li>
